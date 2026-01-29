@@ -1,26 +1,79 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chong Pin Bookkeeping</title>
+    <meta name="description" content="Chong Pin Bookkeeping — simple bookkeeping services" />
+    <style>
+      :root { --bg:#ffffff; --muted:#6b7280; --accent:#0f172a; --card:#f8fafc; }
+      html,body { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: var(--bg); color: var(--accent); }
+      .container { max-width:1000px; margin:0 auto; padding:28px; }
+      header { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+      .logo { font-weight:700; font-size:18px; }
+      nav a { color:var(--muted); margin-left:12px; text-decoration:none; font-size:14px; }
+      .hero { display:flex; gap:28px; align-items:center; margin-top:36px; background:var(--card); padding:28px; border-radius:12px; box-shadow:0 6px 18px rgba(15,23,42,0.06); }
+      .hero img { width:160px; height:160px; border-radius:50%; object-fit:cover; box-shadow:0 6px 18px rgba(2,6,23,0.08); }
+      .hero .text h1 { margin:0 0 8px 0; font-size:28px; }
+      .hero .text p { margin:0; color:var(--muted); }
+      section { margin-top:40px; }
+      .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px; }
+      .card { background:white; border-radius:10px; padding:16px; box-shadow:0 4px 14px rgba(2,6,23,0.04); }
+      footer { margin-top:48px; padding:18px 0; text-align:center; color:var(--muted); font-size:14px; }
+      a.cta { display:inline-block; padding:10px 16px; background:#0b76ef; color:white; border-radius:8px; text-decoration:none; font-weight:600; margin-top:12px; }
+      @media (max-width:640px) { .hero { flex-direction:column; text-align:center; } nav { display:none; } }
+    </style>
   </head>
-
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <header>
+        <div class="logo">Chong Pin Bookkeeping</div>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="hero" role="region" aria-label="Introduction">
+          <img src="profile.jpg" alt="Profile photo" />
+          <div class="text">
+            <h1>Small business bookkeeping made simple</h1>
+            <p>Accurate bookkeeping and reliable support to keep your finances organized. Affordable plans for small businesses and freelancers.</p>
+            <p><strong style="color:var(--accent)">Open for new clients.</strong></p>
+            <a class="cta" href="#contact">Contact us</a>
+          </div>
+        </div>
+
+        <section id="services" aria-labelledby="services-heading">
+          <h2 id="services-heading">Services</h2>
+          <div class="cards">
+            <div class="card"><h3>Monthly Bookkeeping</h3><p style="color:var(--muted)">Bank reconciliations, expense categorization, and reports.</p></div>
+            <div class="card"><h3>Tax Prep Support</h3><p style="color:var(--muted)">Year-end reports and support to your accountant.</p></div>
+            <div class="card"><h3>Payroll Assistance</h3><p style="color:var(--muted)">Simple payroll help for small teams.</p></div>
+          </div>
+        </section>
+
+        <section id="pricing" aria-labelledby="pricing-heading">
+          <h2 id="pricing-heading">Pricing (examples)</h2>
+          <div class="cards">
+            <div class="card"><strong>Starter</strong><p style="color:var(--muted)">For very small business — $199 / month</p></div>
+            <div class="card"><strong>Standard</strong><p style="color:var(--muted)">Most businesses — $349 / month</p></div>
+            <div class="card"><strong>Custom</strong><p style="color:var(--muted)">Tailored plans — contact for quote</p></div>
+          </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <p style="color:var(--muted)">Email: hello@example.com</p>
+          <p style="color:var(--muted)">Replace the email with the address you want clients to use.</p>
+        </section>
+      </main>
+
+      <footer>© <span id="year"></span> Chong Pin Bookkeeping</footer>
+    </div>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
