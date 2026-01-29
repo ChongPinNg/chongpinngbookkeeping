@@ -9,19 +9,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@chongpinbookkeeping.com",
-    href: "mailto:hello@chongpinbookkeeping.com",
+    value: "chongpinbookkeeping@gmail.com",
+    href: "mailto:chongpinbookkeeping@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "(555) 123-4567",
-    href: "tel:+15551234567",
+    value: "(+51) 928-582-075",
+    href: "tel:+51928582075",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Serving clients nationwide",
+    value: "Serving US clients",
     href: null,
   },
 ];
