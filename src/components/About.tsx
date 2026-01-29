@@ -1,9 +1,8 @@
 import { Award, Users, Clock, Heart } from "lucide-react";
-import profilePic from "@/assets/profile-pic.png";
+import profilePic from "chongpinngbookkeeping/profile.jpg";
 
 const stats = [
-  { icon: Clock, value: "10+", label: "Years Experience" },
-  { icon: Users, value: "50+", label: "Happy Clients" },
+  { icon: Clock, value: "5+", label: "Years Experience" },
   { icon: Award, value: "100%", label: "Satisfaction Rate" },
 ];
 
@@ -33,7 +32,7 @@ const About = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hello! I'm Chong Pin, a dedicated bookkeeper with over a decade of experience 
+                Hello! I'm Chong Pin, a dedicated bookkeeper with many years of experience 
                 helping small businesses and entrepreneurs maintain accurate financial records.
               </p>
               <p>
