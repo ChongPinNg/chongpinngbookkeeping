@@ -1,5 +1,7 @@
 import { Award, Users, Clock, Heart } from "lucide-react";
-import profilePic from "chongpinngbookkeeping/profile.jpg";
+import profilePic from "../assets/profile.jpg";
+
+<img src={profilePic} alt="Chong Pin - Professional Bookkeeper" />
 
 const stats = [
   { icon: Clock, value: "5+", label: "Years Experience" },
