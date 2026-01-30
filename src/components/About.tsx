@@ -1,5 +1,5 @@
 import { Award, Users, Clock, Heart } from "lucide-react";
-import profilePic from "@/assets/profile-pic.png";
+import profilePic from "@/assets/profile.jpg";
 
 const stats = [
   { icon: Clock, value: "10+", label: "Years Experience" },
